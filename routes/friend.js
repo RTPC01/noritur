@@ -3,7 +3,7 @@ const router = express.Router();
 const User = require('../models/user');
 
 router.get('/', async (req, res) => {
-  // 모든 사용자를 찾아서 보여줍니다.
+  // 모든 사용자를 찾아서 보여줌
   const users = await User.find({});
   res.render('noritur_friend/index', { users });
 });
