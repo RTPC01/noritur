@@ -1,0 +1,9 @@
+<h1>Friend List</h1>
+
+<ul>
+  <% for (let user of users) { %>
+    <li><%= user.username %> - <%= user.location %></li>
+  <% } %>
+</ul>
+
+<a href="/noritur_friend/new">Add Friend</a>

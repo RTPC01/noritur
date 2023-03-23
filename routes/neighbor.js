@@ -27,7 +27,7 @@ router.get('/:id', async(req, res) => {
 });
 
 //게시물 수정 페이지
-router.get('/:id/edit', (req, res) => {
+router.get('/:id/edit', async(req, res) => {
   // 게시물 수정 페이지를 보여주는 로직을 추가
   const { id } = req.params;
   const post = await Post.findById(id);

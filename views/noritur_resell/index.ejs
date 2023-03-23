@@ -1,0 +1,9 @@
+<h1>Resell List</h1>
+
+<ul>
+  <% for (let item of items) { %>
+    <li><%= item.name %> - <%= item.price %>원</li>
+  <% } %>
+</ul>
+
+<a href="/noritur_resell/new">Add Item</a>
